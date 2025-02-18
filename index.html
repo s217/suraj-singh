@@ -2,10 +2,128 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Suraj Singh - Software Developer</title>
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Header */
+        header {
+            background: #007acc;
+            color: #fff;
+            padding: 2rem 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+        }
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        section {
+            margin-bottom: 2rem;
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        section h2 {
+            margin-top: 0;
+            color: #007acc;
+        }
+        /* Skills Section */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+        .skill {
+            background: #007acc;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-size: 0.9rem;
+        }
+        /* Footer */
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+        }
+    </style>
 </head>
 <body>
-<h1>Suraj Singh</h1>
-<p>Welcome to my personal website!</p>
+<header>
+    <h1>Suraj Singh</h1>
+    <p>Software Developer | Innovator | Problem Solver</p>
+</header>
+
+<div class="container">
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hello, I'm Suraj Singh, a passionate software developer dedicated to building efficient and scalable solutions. My focus is on writing clean, maintainable code and continuously learning new technologies to enhance my craft.</p>
+    </section>
+
+    <!-- Software Skills Section -->
+    <section id="skills">
+        <h2>Software Skills</h2>
+        <div class="skills">
+            <div class="skill">JavaScript</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">React</div>
+            <div class="skill">Express.js</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">SQL</div>
+            <div class="skill">HTML & CSS</div>
+            <div class="skill">Git & GitHub</div>
+            <div class="skill">RESTful APIs</div>
+            <div class="skill">Agile Methodologies</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project One:</strong> A web application built with React and Node.js for efficient task management.</li>
+            <li><strong>Project Two:</strong> An API service using Express.js that powers dynamic front-end applications.</li>
+            <li><strong>Project Three:</strong> A responsive website utilizing modern web technologies for a seamless user experience.</li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:your-email@example.com">your-email@example.com</a>.</p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Suraj Singh. All rights reserved.</p>
+</footer>
 </body>
 </html>

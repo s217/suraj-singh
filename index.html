@@ -3,122 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Suraj Singh - Software Developer</title>
+    <title>Suraj Singh | Backend Lead & Software Expert</title>
+    <!-- Link to Animate.css for subtle animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <style>
         /* Base Styles */
         body {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f4f4f4;
+            background: #f7f9fc;
             color: #333;
             line-height: 1.6;
         }
-        a {
-            color: #007acc;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        /* Header */
         header {
-            background: #007acc;
+            background: #222;
             color: #fff;
-            padding: 2rem 0;
+            padding: 60px 20px;
             text-align: center;
+            animation: fadeInDown 1s;
         }
         header h1 {
-            margin: 0;
-            font-size: 2.5rem;
+            font-size: 3.5rem;
+            margin-bottom: 0.5rem;
         }
         header p {
-            font-size: 1.2rem;
+            font-size: 1.4rem;
+            margin: 0;
         }
-        /* Container */
         .container {
             max-width: 1000px;
-            margin: 2rem auto;
-            padding: 0 1rem;
+            margin: 40px auto;
+            padding: 0 20px;
         }
         section {
-            margin-bottom: 2rem;
             background: #fff;
-            padding: 1.5rem;
+            margin-bottom: 30px;
+            padding: 30px;
             border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            animation: fadeInUp 1s;
         }
         section h2 {
             margin-top: 0;
-            color: #007acc;
+            color: #222;
+            border-bottom: 2px solid #222;
+            padding-bottom: 10px;
         }
-        /* Skills Section */
-        .skills {
+        section p {
+            font-size: 1.1rem;
+            margin: 15px 0;
+        }
+        ul {
+            list-style: disc inside;
+            margin-left: 20px;
+        }
+        .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            margin-top: 1rem;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 0;
+            list-style: none;
         }
-        .skill {
+        .skills-list li {
             background: #007acc;
             color: #fff;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            font-size: 0.9rem;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            margin: 5px 0;
         }
-        /* Footer */
         footer {
-            background: #333;
+            background: #222;
             color: #fff;
             text-align: center;
-            padding: 1rem 0;
+            padding: 20px 0;
+            font-size: 0.9rem;
+        }
+        /* Custom Animations */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
         }
     </style>
 </head>
 <body>
-<header>
+<header class="animate__animated animate__fadeInDown">
     <h1>Suraj Singh</h1>
-    <p>Software Developer | Innovator | Problem Solver</p>
+    <p>Backend Lead | Node.js, SQL, & MongoDB Expert</p>
 </header>
 
 <div class="container">
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="animate__animated animate__fadeInUp">
         <h2>About Me</h2>
-        <p>Hello, I'm Suraj Singh, a passionate software developer dedicated to building efficient and scalable solutions. My focus is on writing clean, maintainable code and continuously learning new technologies to enhance my craft.</p>
+        <p>
+            I am a seasoned backend developer with over 4 years of professional experience in crafting robust, scalable, and high-performance systems. With a strong foundation in Node.js, SQL, and MongoDB, I specialize in designing complex data pipelines, writing advanced queries, and integrating third-party services to drive business value.
+        </p>
     </section>
 
-    <!-- Software Skills Section -->
-    <section id="skills">
-        <h2>Software Skills</h2>
-        <div class="skills">
-            <div class="skill">JavaScript</div>
-            <div class="skill">Node.js</div>
-            <div class="skill">React</div>
-            <div class="skill">Express.js</div>
-            <div class="skill">MongoDB</div>
-            <div class="skill">SQL</div>
-            <div class="skill">HTML & CSS</div>
-            <div class="skill">Git & GitHub</div>
-            <div class="skill">RESTful APIs</div>
-            <div class="skill">Agile Methodologies</div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Project One:</strong> A web application built with React and Node.js for efficient task management.</li>
-            <li><strong>Project Two:</strong> An API service using Express.js that powers dynamic front-end applications.</li>
-            <li><strong>Project Three:</strong> A responsive website utilizing modern web technologies for a seamless user experience.</li>
+    <!-- Technical Expertise Section -->
+    <section id="expertise" class="animate__animated animate__fadeInUp">
+        <h2>Technical Expertise</h2>
+        <p>
+            My skill set encompasses a wide range of backend technologies and best practices. I have built sophisticated aggregation pipelines in MongoDB, engineered intricate SQL queries for data optimization, and developed resilient Node.js applications. I am proficient in:
+        </p>
+        <ul class="skills-list">
+            <li>Advanced Node.js Application Development</li>
+            <li>Complex SQL Query Design & Optimization</li>
+            <li>MongoDB Aggregation Pipelines</li>
+            <li>Google SQS Integration</li>
+            <li>Scheduled Cron Jobs</li>
+            <li>Third-Party API Integration (Aftership, Get Balance, Stripe, Elastic)</li>
+            <li>RESTful API Design & Implementation</li>
         </ul>
     </section>
 
+    <!-- Professional Experience Section -->
+    <section id="experience" class="animate__animated animate__fadeInUp">
+        <h2>Professional Experience</h2>
+        <p>
+            As the Backend Lead at a leading native retail organization, I spearhead the development and architecture of mission-critical backend systems. My role involves guiding cross-functional teams to build scalable solutions that enhance operational efficiency and deliver exceptional user experiences. I have a track record of:
+        </p>
+        <ul>
+            <li>Designing and implementing high-performance Node.js backend services.</li>
+            <li>Developing and maintaining complex SQL and MongoDB queries to support data-driven applications.</li>
+            <li>Integrating cloud-based messaging systems like Google SQS for asynchronous processing.</li>
+            <li>Implementing robust scheduled tasks and cron jobs to automate business processes.</li>
+            <li>Seamlessly integrating third-party APIs for functionalities such as shipment tracking, payment processing, and search optimization.</li>
+        </ul>
+    </section>
+
+    <!-- Projects & Achievements Section -->
+    <section id="projects" class="animate__animated animate__fadeInUp">
+        <h2>Projects & Achievements</h2>
+        <p>
+            Throughout my career, I have successfully delivered projects that underscore my technical prowess and leadership. Key highlights include:
+        </p>
+        <ul>
+            <li>Architecting aggregation pipelines in MongoDB that significantly improved data processing efficiency.</li>
+            <li>Developing a suite of Node.js microservices that streamlined operations and improved system reliability.</li>
+            <li>Implementing integration with Aftership to enable real-time tracking for shipments, enhancing customer satisfaction.</li>
+            <li>Integrating Stripe for secure payment processing, ensuring a seamless financial transaction flow.</li>
+            <li>Deploying Elasticsearch to power advanced search capabilities, optimizing data retrieval speed and relevance.</li>
+        </ul>
+    </section>
+
+    <!-- Education & Background Section -->
+    <section id="education" class="animate__animated animate__fadeInUp">
+        <h2>Education & Background</h2>
+        <p>
+            I graduated from Lovely Professional University in 2018, where I developed a strong academic foundation in computer science. Based in Delhi, I continually leverage both academic insights and real-world experiences to stay at the cutting edge of backend development and database management.
+        </p>
+    </section>
+
+    <!-- Career Aspirations Section -->
+    <section id="aspirations" class="animate__animated animate__fadeInUp">
+        <h2>Career Aspirations</h2>
+        <p>
+            My passion lies in pushing the boundaries of backend technology and database optimization. I aspire to contribute to innovative projects that challenge conventional limits and drive business transformation. My goal is to lead teams in creating scalable, secure, and high-performing systems that power next-generation applications.
+        </p>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:singh217suraj@gmail.com">your-email@example.com</a>.</p>
+    <section id="contact" class="animate__animated animate__fadeInUp">
+        <h2>Contact Me</h2>
+        <p>
+            If you'd like to discuss potential collaborations, technical challenges, or opportunities in backend development, feel free to reach out to me via email at <a href="mailto:singh217suraj@gmail.com">your-email@example.com</a>.
+        </p>
     </section>
 </div>
 
